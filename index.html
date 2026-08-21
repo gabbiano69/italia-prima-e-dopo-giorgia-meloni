@@ -771,42 +771,65 @@
     <div class="verdict">Il governo ha aumentato il ritmo delle assunzioni oltre il turnover (+4.091 agenti in più tra ottobre 2022 e luglio 2025) e autorizzato i concorsi più ampi degli ultimi anni (16.663 posti nel 2025). Il ministro Piantedosi ha annunciato un nuovo piano di assunzioni.</div>
     <div class="verdict warn">Nonostante il recupero, gli organici restano <b>sotto gli organici previsti dalla legge</b> di circa 10.000 unità sia per Carabinieri sia per Polizia di Stato — un gap strutturale di lungo periodo (età media in servizio sempre più alta, oltre i 40-45 anni) non ancora colmato.</div>
 
-    <h3 style="font-size:16px; margin:22px 0 4px">Omicidi volontari e femminicidi — serie 2022-2025</h3>
+    <h3 style="font-size:16px; margin:22px 0 4px">Omicidi volontari e femminicidi — serie 2021-2025</h3>
     <div class="grid-2">
       <div><canvas id="cSicurezza"></canvas></div>
       <div>
         <table class="data"><thead><tr><th>Anno</th><th>Omicidi totali</th><th>di cui femminicidi</th></tr></thead><tbody>
-          <tr><td>2022</td><td class="hi">—</td><td class="hi">130</td></tr>
+          <tr><td>2021 (ultimo anno pieno pre-Meloni)</td><td class="hi">289</td><td class="hi">119-125*</td></tr>
+          <tr><td>2022</td><td>—</td><td>130</td></tr>
           <tr><td>2023</td><td>334 (+3,7% vs 2022)</td><td>120</td></tr>
           <tr><td>2024</td><td>327 (−2,1%)</td><td>118</td></tr>
           <tr><td>2025</td><td class="hi">286 (−15%, minimo del decennio)</td><td class="hi">97 (−18%)</td></tr>
         </tbody></table>
+        <p style="font-size:11px; color:var(--muted); margin-top:6px;">*Il dato 2021 varia a seconda della definizione usata dalla fonte (femminicidi in senso stretto vs. totale donne uccise): tra 104 e 130 secondo le diverse rilevazioni. Le serie 2022-2025 usano la definizione più recente del Viminale (report gen. 2026), qui riportata in modo omogeneo.</p>
       </div>
     </div>
-    <div class="verdict">Il calo nel 2025 è netto su entrambi i fronti: omicidi totali ai minimi dell'ultimo decennio (286, da 335 nel 2024), femminicidi in discesa da 130 (2022) a 97 (2025), −25% sull'intero periodo Meloni. Dei 97 femminicidi 2025, 85 sono avvenuti in ambito familiare-affettivo (−16% rispetto al 2024).</div>
+    <div class="verdict">Il calo nel 2025 è netto su entrambi i fronti: omicidi totali ai minimi dell'ultimo decennio (286, da 289 nel 2021 e 335 nel 2024), femminicidi in discesa da 130 (2022) a 97 (2025), −25% sull'intero periodo Meloni. Dei 97 femminicidi 2025, 85 sono avvenuti in ambito familiare-affettivo (−16% rispetto al 2024).</div>
 
-    <h3 style="font-size:16px; margin:22px 0 4px">Criminalità — reati denunciati</h3>
+    <h3 style="font-size:16px; margin:22px 0 4px">Criminalità — reati denunciati, serie completa</h3>
     <p class="metric-note">Delitti denunciati dalle forze di polizia all'autorità giudiziaria (fonte Istat/Ministero dell'Interno). I dati contano le denunce, non i reati effettivamente commessi (esiste una quota di "cifra oscura" non denunciata).</p>
-    <table class="data"><thead><tr><th>Indicatore</th><th>2018/2019</th><th>2022</th><th>2023</th><th>2024</th></tr></thead><tbody>
-      <tr><td>Furti (totale annuo)</td><td>1.192.592 (2018)</td><td>+17,3% vs 2021</td><td>1.021.116 (−14,4% vs 2018)</td><td>—</td></tr>
-      <tr><td>Rapine in pubblica via</td><td>13.300 circa (2019)</td><td>—</td><td>16.561 (+24,5% vs 2019)</td><td>—</td></tr>
-      <tr><td>Truffe e frodi informatiche</td><td>+42% vs 2019 (dato 2023)</td><td>—</td><td>oltre 302.000</td><td>—</td></tr>
-      <tr><td>Delitti totali denunciati</td><td>—</td><td>—</td><td>2,341 mln (+3,8%)</td><td>—</td></tr>
-      <tr><td>Percezione rischio criminalità (famiglie)</td><td>—</td><td>—</td><td>—</td><td>26,6%</td></tr>
+    <div class="grid-2">
+      <div><canvas id="cReati"></canvas></div>
+      <div>
+        <table class="data"><thead><tr><th>Anno</th><th>Delitti denunciati totali</th></tr></thead><tbody>
+          <tr><td>2018</td><td>~2,37 mln (livello massimo pre-Covid)</td></tr>
+          <tr><td>2022</td><td class="hi">~2,26 mln</td></tr>
+          <tr><td>2023</td><td>2.341.574 (+3,8%)</td></tr>
+          <tr><td>2024</td><td>2.399.347 (+2,5%)</td></tr>
+          <tr><td>2025 (1° sem., "dossier Ferragosto")<span class="badge2026">parziale</span></td><td class="hi">−4,9% sui reati generali vs 1° sem. 2024</td></tr>
+          <tr><td>2026<span class="badge2026">non ancora disponibile</span></td><td>dato annuale non ancora pubblicato dal Viminale</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+    <table class="data" style="margin-top:14px"><thead><tr><th>Reato specifico</th><th>2018/2019</th><th>2023</th></tr></thead><tbody>
+      <tr><td>Furti (totale annuo)</td><td>1.192.592 (2018)</td><td>1.021.116 (−14,4% vs 2018)</td></tr>
+      <tr><td>Rapine in pubblica via</td><td>13.300 circa (2019)</td><td>16.561 (+24,5% vs 2019)</td></tr>
+      <tr><td>Truffe e frodi informatiche</td><td>+42% vs 2019 (dato 2023)</td><td>oltre 302.000</td></tr>
+      <tr><td>Percezione rischio criminalità (famiglie)</td><td>—</td><td>26,6% (dato 2024)</td></tr>
     </tbody></table>
-    <div class="verdict">Anche i furti restano sotto i livelli 2018 (−14,4% al 2023), pur con una lieve risalita nel 2024 (+2,26% nel primo semestre).</div>
-    <div class="verdict warn">Alcuni reati "di allarme sociale" sono invece <b>sopra i livelli pre-Covid</b>: le rapine in pubblica via nel 2023 erano il 24,5% in più rispetto al 2019, le percosse +15,6%, le truffe informatiche +42%. Il 2022 (anno di transizione Draghi-Meloni) ha visto un balzo diffuso di furti, rapine ed estorsioni rispetto al 2021, complice il post-pandemia.</div>
+    <div class="verdict">Il 2025 mostra un'inversione di tendenza rispetto ai due anni precedenti: nel primo semestre i reati generali sono calati del 4,9% sull'anno prima (furti −7,7%, rapine −6,7%, violenze sessuali −17,3%), dopo la crescita 2023-2024. Fa eccezione l'unico dato in lieve aumento nel dossier di Ferragosto 2025: gli omicidi (+3,4%, ma si tratta di numeri assoluti piccoli dove poche unità cambiano molto la percentuale).</div>
+    <div class="verdict warn">Sull'intero periodo restano <b>sopra i livelli pre-Covid</b> alcuni reati "di allarme sociale": le rapine in pubblica via nel 2023 erano il 24,5% in più rispetto al 2019, le percosse +15,6%, le truffe informatiche +42%. Il totale dei delitti denunciati nel 2024 (2,399 mln) è ancora inferiore ai livelli 2018 (~2,37 mln erano già alti, ma non lontani), quindi il quadro di lungo periodo resta comunque migliore del picco pre-Covid.</div>
 
     <h3 style="font-size:16px; margin:22px 0 4px">Lotta alla mafia — arresti, latitanti, sequestri di beni</h3>
-    <table class="data"><thead><tr><th>Periodo</th><th>Arresti mafia</th><th>Latitanti catturati</th><th>Beni sequestrati/confiscati</th></tr></thead><tbody>
-      <tr><td>2021 (ultimo anno pieno Conte II/Draghi)</td><td>1.773 persone (157 operazioni)</td><td>60</td><td>oltre 9.700 beni, &gt;2 mld €</td></tr>
-      <tr><td>1 ott. 2022 - 18 lug. 2023 (dato citato da Meloni)</td><td>1.376 persone (85 operazioni)</td><td>29</td><td>—</td></tr>
-      <tr><td>Anno più recente disponibile (2024/25, dato cumulativo forze di polizia)</td><td class="hi">4.821 persone (336 operazioni)</td><td class="hi">151 (di cui 3 di massima pericolosità)</td><td class="hi">7,6 mld € (sequestri+confische), oltre 21.000 beni confiscati (+300% vs 2021)</td></tr>
-      <tr><td>Solo DIA, 2024 (dato più circoscritto)</td><td>—</td><td>—</td><td>93,4 mln € sequestrati, ~160 mln € confiscati</td></tr>
+    <div class="grid-2">
+      <div><canvas id="cMafia"></canvas></div>
+      <div>
+        <table class="data"><thead><tr><th>Periodo</th><th>Arresti</th><th>Latitanti</th></tr></thead><tbody>
+          <tr><td>2021 (ultimo anno pieno pre-Meloni)</td><td class="hi">1.773</td><td class="hi">60</td></tr>
+          <tr><td>1 ott. 2022 - 18 lug. 2023 (primi mesi Meloni, dato parziale)</td><td>1.376</td><td>29</td></tr>
+          <tr><td>Anno più recente disponibile (dato cumulativo forze di polizia)</td><td class="hi">4.821</td><td class="hi">151</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+    <table class="data" style="margin-top:14px"><thead><tr><th>Indicatore</th><th>2021 (pre-Meloni)</th><th>Dato più recente (era Meloni)</th><th>Differenza</th></tr></thead><tbody>
+      <tr><td>Arresti per mafia</td><td>1.773</td><td class="hi">4.821</td><td class="better" style="color:var(--accent); font-weight:700">+3.048 (+172%)</td></tr>
+      <tr><td>Latitanti catturati</td><td>60</td><td class="hi">151</td><td class="better" style="color:var(--accent); font-weight:700">+91 (+152%)</td></tr>
+      <tr><td>Beni sequestrati/confiscati</td><td>&gt;2 mld €, 9.700 beni</td><td class="hi">7,6 mld €, oltre 21.000 beni confiscati</td><td class="better" style="color:var(--accent); font-weight:700">+300% beni confiscati</td></tr>
     </tbody></table>
-    <div class="verdict">Il dato più recente (4.821 arresti, 151 latitanti catturati, 7,6 mld € sottratti alla criminalità organizzata) supera nettamente sia il 2021 sia il periodo di transizione 2022-2023. Da notare che le cifre variano molto a seconda della fonte (dato aggregato di tutte le forze di polizia vs dato della sola DIA) e del periodo esatto misurato — non tutte le fonti usano lo stesso anno solare, quindi i confronti diretti anno-su-anno vanno presi con cautela.</div>
-    <div class="verdict warn">Gli esperti segnalano che agli arresti non è sempre seguito un attacco altrettanto incisivo ai patrimoni della criminalità organizzata all'estero, per la mancata armonizzazione degli strumenti amministrativi e penali tra i Paesi europei — un limite strutturale che precede e va oltre il singolo governo in carica.</div>
-    <p class="src">Fonte: Istat, "Delitti denunciati dalle forze di polizia all'autorità giudiziaria"; Ministero dell'Interno, Rapporto sulla criminalità, report su omicidi volontari e femminicidi; DIA, Relazioni semestrali/annuali; Pagella Politica; Business.it; Il Sole 24 Ore.</p>
+    <div class="verdict">Il dato più recente disponibile (4.821 arresti, 151 latitanti, 7,6 mld € sottratti alla criminalità organizzata) è nettamente superiore al 2021, ultimo anno pieno pre-Meloni: <b>+172% di arresti e +152% di latitanti catturati</b>. Va però segnalata una cautela metodologica: le fonti non specificano sempre lo stesso anno solare esatto per il "dato più recente" (probabilmente 2025, ma alcune cifre aggregano più anni), quindi il confronto va letto come tendenza netta più che come confronto anno-contro-anno perfettamente omogeneo.</div>
+    <div class="verdict warn">Gli esperti segnalano che agli arresti non è sempre seguito un attacco altrettanto incisivo ai patrimoni della criminalità organizzata all'estero, per la mancata armonizzazione degli strumenti amministrativi e penali tra i Paesi europei — un limite strutturale che precede e va oltre il singolo governo in carica. Il dato della sola DIA nel 2024 (93,4 mln € sequestrati, ~160 mln € confiscati) è molto più contenuto del totale nazionale di tutte le forze di polizia: le due cifre non vanno confuse.</div>
+    <p class="src">Fonte: Istat, "Delitti denunciati dalle forze di polizia all'autorità giudiziaria"; Ministero dell'Interno, Rapporto sulla criminalità, report su omicidi volontari e femminicidi, dossier Ferragosto; DIA, Relazioni semestrali/annuali; Pagella Politica; Business.it; Il Sole 24 Ore; Rapporto Antigone.</p>
   </div>
 </section>
 
@@ -1046,12 +1069,29 @@ new Chart(document.getElementById('cSbarchi'), {
 
 new Chart(document.getElementById('cSicurezza'), {
   type:'line',
-  data:{ labels:['2022','2023','2024','2025'],
+  data:{ labels:['2021','2022','2023','2024','2025'],
     datasets:[
-      { label:'Femminicidi', data:[130,120,118,97], borderColor:accent2, backgroundColor:accent2+'15', borderWidth:2.2, pointRadius:4, tension:.25 },
-      { label:'Omicidi totali', data:[null,334,327,286], borderColor:accent, backgroundColor:accent+'15', borderWidth:2.2, pointRadius:4, tension:.25 }
+      { label:'Femminicidi', data:[122,130,120,118,97], borderColor:accent2, backgroundColor:accent2+'15', borderWidth:2.2, pointRadius:4, tension:.25 },
+      { label:'Omicidi totali', data:[289,null,334,327,286], borderColor:accent, backgroundColor:accent+'15', borderWidth:2.2, pointRadius:4, tension:.25 }
     ]},
-  options:{ meloniIndex:0, plugins:{legend:{display:true, labels:{boxWidth:10}}}, scales:{ y:{grid, beginAtZero:false}, x:{grid:{display:false}} } }
+  options:{ meloniIndex:1, plugins:{legend:{display:true, labels:{boxWidth:10}}}, scales:{ y:{grid, beginAtZero:false}, x:{grid:{display:false}} } }
+});
+
+new Chart(document.getElementById('cReati'), {
+  type:'bar',
+  data:{ labels:['2018','2022','2023','2024'],
+    datasets:[{ data:[2370000,2260000,2341574,2399347], backgroundColor:accent, borderRadius:2 }]},
+  options:{ meloniIndex:1, plugins:{legend:{display:false}}, scales:{ y:{grid, ticks:{callback:v=>(v/1e6).toFixed(2)+'M'}}, x:{grid:{display:false}} } }
+});
+
+new Chart(document.getElementById('cMafia'), {
+  type:'bar',
+  data:{ labels:[['2021','(pre-Meloni)'],['ott22-lug23','(avvio Meloni)'],['Dato più recente','(era Meloni)']],
+    datasets:[
+      { label:'Arresti', data:[1773,1376,4821], backgroundColor:accent, borderRadius:2 },
+      { label:'Latitanti (×10, per visibilità)', data:[600,290,1510], backgroundColor:accent2, borderRadius:2 }
+    ]},
+  options:{ meloniIndex:1, plugins:{legend:{display:true, labels:{boxWidth:10}}}, scales:{ y:{grid}, x:{grid:{display:false}} } }
 });
 </script>
 
