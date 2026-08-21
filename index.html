@@ -86,13 +86,13 @@
 </style>
 </head>
 <body>
-<div class="update-banner">Ultimo controllo dati: <b>20 agosto 2026</b> — alcuni indicatori (spread, inflazione, migrazione) si aggiornano più spesso di altri: vedi fonte in ciascuna sezione.</div>
+<div class="update-banner">Ultimo controllo dati: <b>21 agosto 2026</b> — alcuni indicatori (spread, inflazione, migrazione) si aggiornano più spesso di altri: vedi fonte in ciascuna sezione.</div>
 
 <header class="hero">
   <div class="wrap">
     <p class="eyebrow">Dati ufficiali — Istat · Banca d'Italia · Ministero dell'Interno · Ragioneria Generale dello Stato · OCSE · Eurostat</p>
     <h1>Italia prima e dopo Meloni<br><span style="font-size:.55em; font-weight:400; color:#5a6270;">I numeri a confronto, 2018-2026</span></h1>
-    <p class="lede">Confronto tra la legislatura pre-Meloni (governi Conte I, Conte II, Draghi: giugno 2018 – ottobre 2022) e il governo Meloni (ottobre 2022 – oggi), indicatore per indicatore, tutti con fonte citata. Aggiornato al <b>20 agosto 2026</b>.</p>
+    <p class="lede">Confronto tra la legislatura pre-Meloni (governi Conte I, Conte II, Draghi: giugno 2018 – ottobre 2022) e il governo Meloni (ottobre 2022 – oggi), indicatore per indicatore, tutti con fonte citata. Aggiornato al <b>21 agosto 2026</b>.</p>
     <p class="lede" style="font-size:14.5px; color:#5a6270;">Nota metodologica: dove i dati mensili sono disponibili (lavoro, inflazione, spread), il confronto usa <b>settembre 2022</b> — l'ultimo mese intero del governo Draghi — come punto di partenza esatto, invece del dato dell'intero anno 2022 che mescola gli ultimi mesi Draghi con i primi mesi Meloni. Per gli indicatori disponibili solo su base annuale (Pil, debito, deficit), resta il 2022 come anno di riferimento, specificando quando possibile il valore più vicino all'insediamento del 22 ottobre 2022.</p>
     <div class="period-bar">
       <div class="a">2018-2022<br><b>Conte I · Conte II · Draghi</b></div>
@@ -106,7 +106,7 @@
   <a href="#inflazione">Inflazione</a><a href="#salari">Salari</a><a href="#pensioni">Pensioni</a>
   <a href="#fisco">Cuneo/IRPEF</a><a href="#evasione">Evasione</a><a href="#agricoltura">Agricoltura</a><a href="#welfare">Welfare famiglie</a><a href="#natalita">Natalità</a><a href="#sanita">Sanità</a><a href="#rating">Rating</a><a href="#spread">Spread</a>
   <a href="#export">Export</a><a href="#industria">Industria</a><a href="#turismo">Turismo</a><a href="#risparmio">Risparmio</a><a href="#vacanze">Vacanze italiani</a>
-  <a href="#migrazione">Migrazione</a><a href="#sicurezza">Sicurezza</a><a href="#2026">2026</a><a href="#riepilogo">Riepilogo</a><a href="#fonti">Fonti</a>
+  <a href="#migrazione">Migrazione</a><a href="#sicurezza">Sicurezza</a><a href="#investimenti">Investimenti imprese</a><a href="#2026">2026</a><a href="#riepilogo">Riepilogo</a><a href="#fonti">Fonti</a>
 </nav>
 
 <main>
@@ -756,7 +756,7 @@
 </section>
 
 <section class="card" id="sicurezza">
-  <div class="card-head"><h2>Sicurezza — forze dell'ordine e criminalità</h2><span class="idx">Ministero dell'Interno, Istat</span></div>
+  <div class="card-head"><h2>Sicurezza — forze dell'ordine e criminalità</h2><span class="idx">Ministero dell'Interno, Istat, DIA</span></div>
   <div class="card-body">
 
     <h3 style="font-size:16px; margin:0 0 4px">Assunzioni nelle forze dell'ordine</h3>
@@ -771,19 +771,88 @@
     <div class="verdict">Il governo ha aumentato il ritmo delle assunzioni oltre il turnover (+4.091 agenti in più tra ottobre 2022 e luglio 2025) e autorizzato i concorsi più ampi degli ultimi anni (16.663 posti nel 2025). Il ministro Piantedosi ha annunciato un nuovo piano di assunzioni.</div>
     <div class="verdict warn">Nonostante il recupero, gli organici restano <b>sotto gli organici previsti dalla legge</b> di circa 10.000 unità sia per Carabinieri sia per Polizia di Stato — un gap strutturale di lungo periodo (età media in servizio sempre più alta, oltre i 40-45 anni) non ancora colmato.</div>
 
+    <h3 style="font-size:16px; margin:22px 0 4px">Omicidi volontari e femminicidi — serie 2022-2025</h3>
+    <div class="grid-2">
+      <div><canvas id="cSicurezza"></canvas></div>
+      <div>
+        <table class="data"><thead><tr><th>Anno</th><th>Omicidi totali</th><th>di cui femminicidi</th></tr></thead><tbody>
+          <tr><td>2022</td><td class="hi">—</td><td class="hi">130</td></tr>
+          <tr><td>2023</td><td>334 (+3,7% vs 2022)</td><td>120</td></tr>
+          <tr><td>2024</td><td>327 (−2,1%)</td><td>118</td></tr>
+          <tr><td>2025</td><td class="hi">286 (−15%, minimo del decennio)</td><td class="hi">97 (−18%)</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+    <div class="verdict">Il calo nel 2025 è netto su entrambi i fronti: omicidi totali ai minimi dell'ultimo decennio (286, da 335 nel 2024), femminicidi in discesa da 130 (2022) a 97 (2025), −25% sull'intero periodo Meloni. Dei 97 femminicidi 2025, 85 sono avvenuti in ambito familiare-affettivo (−16% rispetto al 2024).</div>
+
     <h3 style="font-size:16px; margin:22px 0 4px">Criminalità — reati denunciati</h3>
     <p class="metric-note">Delitti denunciati dalle forze di polizia all'autorità giudiziaria (fonte Istat/Ministero dell'Interno). I dati contano le denunce, non i reati effettivamente commessi (esiste una quota di "cifra oscura" non denunciata).</p>
     <table class="data"><thead><tr><th>Indicatore</th><th>2018/2019</th><th>2022</th><th>2023</th><th>2024</th></tr></thead><tbody>
       <tr><td>Furti (totale annuo)</td><td>1.192.592 (2018)</td><td>+17,3% vs 2021</td><td>1.021.116 (−14,4% vs 2018)</td><td>—</td></tr>
-      <tr><td>Omicidi volontari</td><td>328 (2019 circa)</td><td>—</td><td>340-341</td><td class="hi">314-326 (−7,8% vs 2023)</td></tr>
       <tr><td>Rapine in pubblica via</td><td>13.300 circa (2019)</td><td>—</td><td>16.561 (+24,5% vs 2019)</td><td>—</td></tr>
       <tr><td>Truffe e frodi informatiche</td><td>+42% vs 2019 (dato 2023)</td><td>—</td><td>oltre 302.000</td><td>—</td></tr>
       <tr><td>Delitti totali denunciati</td><td>—</td><td>—</td><td>2,341 mln (+3,8%)</td><td>—</td></tr>
       <tr><td>Percezione rischio criminalità (famiglie)</td><td>—</td><td>—</td><td>—</td><td>26,6%</td></tr>
     </tbody></table>
-    <div class="verdict">Gli omicidi volontari, il reato più grave, sono in <b>calo continuo</b>: da 340-341 nel 2023 a 314-326 nel 2024 (−7,8%), proseguendo un trend di lungo periodo (−32,8% dal 2015). Anche i furti restano sotto i livelli 2018 (−14,4% al 2023), pur con una lieve risalita nel 2024 (+2,26% nel primo semestre).</div>
-    <div class="verdict warn">Alcuni reati "di allarme sociale" sono invece <b>sopra i livelli pre-Covid</b>: le rapine in pubblica via nel 2023 erano il 24,5% in più rispetto al 2019, le percosse +15,6%, le truffe informatiche +42%. Il 2022 (anno di transizione Draghi-Meloni) ha visto un balzo diffuso di furti, rapine ed estorsioni rispetto al 2021, complice il post-pandemia. Gli esperti citati da Il Sole 24 Ore attribuiscono l'aumento più a reati "estemporanei" e meno pianificati che a un'emergenza criminale strutturale.</div>
-    <p class="src">Fonte: Istat, "Delitti denunciati dalle forze di polizia all'autorità giudiziaria"; Ministero dell'Interno, Rapporto sulla criminalità; Il Sole 24 Ore, Indice della criminalità; Rapporto Antigone; Sky TG24.</p>
+    <div class="verdict">Anche i furti restano sotto i livelli 2018 (−14,4% al 2023), pur con una lieve risalita nel 2024 (+2,26% nel primo semestre).</div>
+    <div class="verdict warn">Alcuni reati "di allarme sociale" sono invece <b>sopra i livelli pre-Covid</b>: le rapine in pubblica via nel 2023 erano il 24,5% in più rispetto al 2019, le percosse +15,6%, le truffe informatiche +42%. Il 2022 (anno di transizione Draghi-Meloni) ha visto un balzo diffuso di furti, rapine ed estorsioni rispetto al 2021, complice il post-pandemia.</div>
+
+    <h3 style="font-size:16px; margin:22px 0 4px">Lotta alla mafia — arresti, latitanti, sequestri di beni</h3>
+    <table class="data"><thead><tr><th>Periodo</th><th>Arresti mafia</th><th>Latitanti catturati</th><th>Beni sequestrati/confiscati</th></tr></thead><tbody>
+      <tr><td>2021 (ultimo anno pieno Conte II/Draghi)</td><td>1.773 persone (157 operazioni)</td><td>60</td><td>oltre 9.700 beni, &gt;2 mld €</td></tr>
+      <tr><td>1 ott. 2022 - 18 lug. 2023 (dato citato da Meloni)</td><td>1.376 persone (85 operazioni)</td><td>29</td><td>—</td></tr>
+      <tr><td>Anno più recente disponibile (2024/25, dato cumulativo forze di polizia)</td><td class="hi">4.821 persone (336 operazioni)</td><td class="hi">151 (di cui 3 di massima pericolosità)</td><td class="hi">7,6 mld € (sequestri+confische), oltre 21.000 beni confiscati (+300% vs 2021)</td></tr>
+      <tr><td>Solo DIA, 2024 (dato più circoscritto)</td><td>—</td><td>—</td><td>93,4 mln € sequestrati, ~160 mln € confiscati</td></tr>
+    </tbody></table>
+    <div class="verdict">Il dato più recente (4.821 arresti, 151 latitanti catturati, 7,6 mld € sottratti alla criminalità organizzata) supera nettamente sia il 2021 sia il periodo di transizione 2022-2023. Da notare che le cifre variano molto a seconda della fonte (dato aggregato di tutte le forze di polizia vs dato della sola DIA) e del periodo esatto misurato — non tutte le fonti usano lo stesso anno solare, quindi i confronti diretti anno-su-anno vanno presi con cautela.</div>
+    <div class="verdict warn">Gli esperti segnalano che agli arresti non è sempre seguito un attacco altrettanto incisivo ai patrimoni della criminalità organizzata all'estero, per la mancata armonizzazione degli strumenti amministrativi e penali tra i Paesi europei — un limite strutturale che precede e va oltre il singolo governo in carica.</div>
+    <p class="src">Fonte: Istat, "Delitti denunciati dalle forze di polizia all'autorità giudiziaria"; Ministero dell'Interno, Rapporto sulla criminalità, report su omicidi volontari e femminicidi; DIA, Relazioni semestrali/annuali; Pagella Politica; Business.it; Il Sole 24 Ore.</p>
+  </div>
+</section>
+
+<section class="card" id="investimenti">
+  <div class="card-head"><h2>Investimenti e incentivi alle imprese</h2><span class="idx">MIMIT, MEF, INPS, Masaf</span></div>
+  <div class="card-body">
+
+    <h3 style="font-size:16px; margin:0 0 4px">ZES Unica per il Mezzogiorno</h3>
+    <p class="metric-note">Zona economica speciale che unifica, dal 2024, le 8 ZES precedenti in un unico regime agevolato per Abruzzo, Molise, Basilicata, Calabria, Campania, Puglia, Sicilia, Sardegna (più Marche e Umbria).</p>
+    <table class="data"><thead><tr><th>Anno</th><th>Stanziamento credito d'imposta</th></tr></thead><tbody>
+      <tr><td>2024 (avvio ZES Unica)</td><td>1,8 mld €</td></tr>
+      <tr><td>2025</td><td>2,2 mld € (credito effettivo fino al 75% degli investimenti)</td></tr>
+      <tr><td>2026</td><td class="hi">2,3 mld €</td></tr>
+      <tr><td>2027</td><td>1 mld €</td></tr>
+      <tr><td>2028</td><td>750 mln €</td></tr>
+    </tbody></table>
+    <div class="verdict">La ZES Unica ha sostituito un sistema frammentato in 8 zone diverse con un unico regime, semplificando le procedure (autorizzazione unica, sportello digitale). Il credito d'imposta può arrivare fino al 75% delle spese ammissibili per le PMI nelle aree a maggiore intensità di aiuto.</div>
+
+    <h3 style="font-size:16px; margin:22px 0 4px">Transizione 4.0 e 5.0 — digitalizzazione ed efficientamento energetico</h3>
+    <table class="data"><thead><tr><th>Misura</th><th>Dotazione</th></tr></thead><tbody>
+      <tr><td>Transizione 4.0 (PNRR + Fondo complementare)</td><td>crediti concessi: 69.900 imprese (dich. 2021-22), saliti a 111.700 (dich. 2021-25)</td></tr>
+      <tr><td>Transizione 5.0 (2024-2025, nuovo)</td><td class="hi">6,3 mld € — efficientamento energetico, rinnovabili, formazione</td></tr>
+      <tr><td>Pacchetto 4.0+5.0 combinato biennio 2024-2025</td><td>12,7 mld € complessivi</td></tr>
+    </tbody></table>
+    <div class="verdict">Il Piano Transizione 5.0, introdotto nel 2024, è una misura aggiuntiva rispetto alla precedente Transizione 4.0 (ereditata da PNRR/governo Draghi), focalizzata sulla doppia transizione digitale ed energetica: 6,3 mld € in due anni è tra gli stanziamenti più ampi del periodo Meloni per le imprese.</div>
+
+    <h3 style="font-size:16px; margin:22px 0 4px">Incentivi alle assunzioni — giovani, donne, Sud</h3>
+    <table class="data"><thead><tr><th>Misura</th><th>Dettaglio</th></tr></thead><tbody>
+      <tr><td>Decontribuzione Sud (2025-2030, in calo progressivo)</td><td>7,121 mld € totali stanziati; 2025: 25% esonero (max 145€/mese); 2026: 20% (max 125€/mese)</td></tr>
+      <tr><td>Bonus giovani/donne/Sud (Decreto Coesione 2024)</td><td>attivo fino al 31.12.2025, poi scaduto e non prorogato</td></tr>
+      <tr><td>Nuovo pacchetto 2026 (DL 62/2026)</td><td class="hi">esonero contributivo per under 35 disoccupati da 24 mesi; bonus trasformazione contratti a termine giovani</td></tr>
+      <tr><td>Bonus donne con 3+ figli minori (Legge Bilancio 2026, nuovo)</td><td class="hi">esonero contributivo 100% per assunzioni a tempo indeterminato dal 2026</td></tr>
+      <tr><td>Bonus giovani "under 35" a regime</td><td>esonero 50% della retribuzione lorda, fino a 3.000 €/anno</td></tr>
+    </tbody></table>
+    <div class="verdict">Il quadro degli incentivi è stato riorganizzato più volte (2024, 2025, 2026): gli sgravi introdotti nel 2024 sono scaduti a fine 2025 senza proroga diretta, sostituiti da un pacchetto ridisegnato nel 2026 — compreso un nuovo bonus specifico per le madri con almeno 3 figli minori, assente nei governi precedenti.</div>
+
+    <h3 style="font-size:16px; margin:22px 0 4px">Agricoltura — fondi PNRR e Masaf</h3>
+    <table class="data"><thead><tr><th>Misura</th><th>Dato</th></tr></thead><tbody>
+      <tr><td>Fondo rotativo Contratti di filiera (Masaf, PNRR)</td><td class="hi">raddoppiato da 2 a 4 mld € nel 2025</td></tr>
+      <tr><td>Parco Agrisolare</td><td>finanziamento UE per pannelli solari su strutture agricole</td></tr>
+      <tr><td>Innovazione e meccanizzazione (trattori, agricoltura di precisione)</td><td>contributi in conto capitale, riduzione pesticidi 25-40%</td></tr>
+      <tr><td>Fondo Interessi ISMEA (olio, agrumi, lattiero-caseario)</td><td>15 mln € per contributi su prestiti bancari 2023</td></tr>
+      <tr><td>Investimenti pubblici triennio 2023-2025 (già citato in sez. Agricoltura)</td><td>15 mld € stanziati</td></tr>
+    </tbody></table>
+    <div class="verdict">Il raddoppio del Fondo Contratti di filiera (da 2 a 4 mld €) è la misura più consistente del 2025 per il settore, in continuità con l'attuazione del PNRR ereditato da Draghi ma con scelte allocative proprie del governo Meloni tramite il Masaf.</div>
+    <p class="src">Fonte: MIMIT, portale incentivi; Agenzia delle Entrate; INPS, circolari 2025-2026; Masaf, PNRR; Confcommercio; TeamSystem; BPER Banca.</p>
   </div>
 </section>
 
@@ -875,7 +944,7 @@
 <footer>
   <div class="cols">
     <div><h3>Nota</h3><p>Sito informativo basato su dati pubblici ufficiali. Ogni indicatore è presentato con la propria fonte, verificabile indipendentemente. Il periodo 2018-2022 include tre governi diversi tra loro (Conte I, Conte II, Draghi).</p></div>
-    <div><h3>Periodi di riferimento</h3><p>2018-2022: giugno 2018 – ottobre 2022.<br>Governo Meloni: dal 22 ottobre 2022 al 20 agosto 2026.</p></div>
+    <div><h3>Periodi di riferimento</h3><p>2018-2022: giugno 2018 – ottobre 2022.<br>Governo Meloni: dal 22 ottobre 2022 al 21 agosto 2026.</p></div>
   </div>
 </footer>
 
@@ -973,6 +1042,16 @@ new Chart(document.getElementById('cSbarchi'), {
   data:{ labels:['2018','2019','2020','2021','2022','2023','2024','2025'],
     datasets:[{ data:[23370,11471,34154,67477,105131,157651,66317,66296], backgroundColor:accent2, borderRadius:2 }]},
   options:{ meloniIndex:4, plugins:{legend:{display:false}}, scales:{ y:{grid}, x:{grid:{display:false}} } }
+});
+
+new Chart(document.getElementById('cSicurezza'), {
+  type:'line',
+  data:{ labels:['2022','2023','2024','2025'],
+    datasets:[
+      { label:'Femminicidi', data:[130,120,118,97], borderColor:accent2, backgroundColor:accent2+'15', borderWidth:2.2, pointRadius:4, tension:.25 },
+      { label:'Omicidi totali', data:[null,334,327,286], borderColor:accent, backgroundColor:accent+'15', borderWidth:2.2, pointRadius:4, tension:.25 }
+    ]},
+  options:{ meloniIndex:0, plugins:{legend:{display:true, labels:{boxWidth:10}}}, scales:{ y:{grid, beginAtZero:false}, x:{grid:{display:false}} } }
 });
 </script>
 
