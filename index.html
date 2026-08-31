@@ -86,13 +86,13 @@
 </style>
 </head>
 <body>
-<div class="update-banner">Ultimo controllo dati: <b>25 agosto 2026</b> — alcuni indicatori (spread, inflazione, migrazione) si aggiornano più spesso di altri: vedi fonte in ciascuna sezione.</div>
+<div class="update-banner">Ultimo controllo dati: <b>31 agosto 2026</b> — alcuni indicatori (spread, inflazione, migrazione) si aggiornano più spesso di altri: vedi fonte in ciascuna sezione.</div>
 
 <header class="hero">
   <div class="wrap">
     <p class="eyebrow">Dati ufficiali — Istat · Banca d'Italia · Ministero dell'Interno · Ragioneria Generale dello Stato · OCSE · Eurostat</p>
     <h1>Italia prima e dopo Meloni<br><span style="font-size:.55em; font-weight:400; color:#5a6270;">I numeri a confronto, 2018-2026</span></h1>
-    <p class="lede">Confronto tra la legislatura pre-Meloni (governi Conte I, Conte II, Draghi: giugno 2018 – ottobre 2022) e il governo Meloni (ottobre 2022 – oggi), indicatore per indicatore, tutti con fonte citata. Aggiornato al <b>25 agosto 2026</b>.</p>
+    <p class="lede">Confronto tra la legislatura pre-Meloni (governi Conte I, Conte II, Draghi: giugno 2018 – ottobre 2022) e il governo Meloni (ottobre 2022 – oggi), indicatore per indicatore, tutti con fonte citata. Aggiornato al <b>31 agosto 2026</b>.</p>
     <p class="lede" style="font-size:14.5px; color:#5a6270;">Nota metodologica: dove i dati mensili sono disponibili (lavoro, inflazione, spread), il confronto usa <b>settembre 2022</b> — l'ultimo mese intero del governo Draghi — come punto di partenza esatto, invece del dato dell'intero anno 2022 che mescola gli ultimi mesi Draghi con i primi mesi Meloni. Per gli indicatori disponibili solo su base annuale (Pil, debito, deficit), resta il 2022 come anno di riferimento, specificando quando possibile il valore più vicino all'insediamento del 22 ottobre 2022.</p>
     <div class="period-bar">
       <div class="a">2018-2022<br><b>Conte I · Conte II · Draghi</b></div>
@@ -134,6 +134,31 @@
     </div>
     <div class="verdict warn">Nel terzo trimestre 2022 (ultimo trimestre pieno di governo Draghi) il Pil cresceva del +2,6% tendenziale (+0,5% congiunturale), con una crescita acquisita per l'anno al +3,9%. Il Q2 2026 tendenziale (+1,0%) è quindi vicino, seppur ancora leggermente inferiore, al dato di fine mandato Draghi. Media 2018-2022: <b>+1,3%/anno</b> (frenata dal Covid, poi rimbalzo eccezionale). Media 2023-2026: <b>~+0,8%/anno</b>. L'UPB (agosto 2026) ha rivisto al rialzo la stima 2026 a +0,9%, dallo 0,6% di aprile. Rallentamento fisiologico post-rimbalzo, comune a tutta l'Eurozona.</div>
     <p class="src">Fonte: Istat, "Pil e indebitamento delle AP" e "Conti economici trimestrali", comunicati 2019-2026.</p>
+
+    <h3 style="font-size:16px; margin:22px 0 4px">Il Sud cresce più del Nord — un'inversione storica</h3>
+    <p class="metric-note">Dati Svimez (Associazione per lo sviluppo dell'industria nel Mezzogiorno) sulla crescita del PIL per macro-area.</p>
+    <div class="grid-2">
+      <div><canvas id="cPilSudNord"></canvas></div>
+      <div>
+        <table class="data"><thead><tr><th>Anno</th><th>Sud</th><th>Centro-Nord</th></tr></thead><tbody>
+          <tr><td>2018 (pre-Meloni)</td><td>+0,6%</td><td>~+1,0% (stima su media naz. +0,9%)</td></tr>
+          <tr><td>2019 (pre-Meloni)</td><td class="hi">−0,3% (recessione)</td><td class="hi">+0,3%</td></tr>
+          <tr><td>2020 (pre-Meloni, Covid)</td><td>−9,0%</td><td>−9,8% (Sud colpito meno duramente)</td></tr>
+          <tr><td>2021 (pre-Meloni, rimbalzo)</td><td>~+7,3% (stima su cumulato 2021-22)</td><td>~+7,4% (stima, sostanzialmente pari)</td></tr>
+          <tr><td>2022 (transizione Draghi-Meloni)</td><td>+3,5%</td><td>~+3,8% (Sud ancora leggermente sotto)</td></tr>
+          <tr><td>2023</td><td class="hi">+1,3%</td><td>+0,8-0,9%</td></tr>
+          <tr><td>2024</td><td class="hi">+0,9-1,0%</td><td>+0,6-0,7%</td></tr>
+          <tr><td>2025</td><td class="hi">+0,7%</td><td>+0,5%</td></tr>
+          <tr><td>2026 (stima Svimez)<span class="badge2026">parziale</span></td><td class="hi">+0,8%</td><td>+0,7%</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+    <p style="font-size:11px; color:var(--muted); margin-top:-8px;">I valori 2018 (Centro-Nord), 2021 e 2022 (Centro-Nord) sono stime, in assenza di un dato disaggregato diretto nella fonte consultata per quell'anno specifico; gli altri valori sono dati diretti Svimez/Istat.</p>
+    <div class="verdict warn">Attenzione alla lettura del "quanti anni di fila": nel 2022 il Sud (+3,5%) è cresciuto <b>leggermente meno</b> della media nazionale (+3,7%), quindi meno del Centro-Nord — il vero e proprio sorpasso comincia nel <b>2023</b>, il primo anno dal 2015 in cui il Mezzogiorno batte stabilmente il resto del Paese. Diversi report Svimez più recenti (2025) parlano di "quarto anno consecutivo" contando dal 2022, un'indicazione che riflette probabilmente revisioni statistiche successive dei dati 2022; la versione più prudente e verificabile resta: <b>tre anni consecutivi certi (2023-2025)</b>, quattro contando la stima 2026.</div>
+    <div class="verdict">Cumulato 2021-2024: PIL del Sud +8,5% contro +5,8% del Centro-Nord. Anche l'occupazione è cresciuta di più al Sud per cinque anni di fila (2025: +1,4% contro +0,6%). Il traino principale è il PNRR: gli investimenti pubblici in opere sono saliti del 16,8% al Sud nel 2023 (contro +7,2% al Centro-Nord), spingendo soprattutto le costruzioni (+4,9% Sud vs +2,7% Centro-Nord nel 2024) e l'industria in senso stretto (+5,7% Sud contro −2,8% Centro-Nord nel triennio 2021-2024).</div>
+    <div class="verdict">Il ruolo del governo Meloni non si limita alla gestione del PNRR ereditato: lo stesso Rapporto Svimez 2025 cita esplicitamente il <b>credito d'imposta ZES Unica</b> — misura introdotta dal governo Meloni nel 2024, che ha accorpato le 8 ZES precedenti in un unico regime — insieme a Transizione 4.0 e 5.0, tra le leve di politica di bilancio che hanno sostenuto gli investimenti privati in beni strumentali nel Mezzogiorno. Il Sottosegretario al Sud Luigi Sbarra ha parlato di "una scelta politica precisa": PNRR per gli investimenti pubblici, ZES Unica per quelli privati.</div>
+    <div class="verdict warn">Restano due punti di attenzione, sempre secondo Svimez: l'abrogazione della Decontribuzione Sud dal 2025 (misura ereditata dalla Legge di Bilancio 2021) rischia di togliere fino a 2 decimi di punto di PIL e 25.000 posti di lavoro al Mezzogiorno; e dal 2027 Svimez prevede un'inversione della tendenza, con il Centro-Nord che tornerà a crescere più del Sud (+0,5% contro +0,4%), quando l'effetto propulsivo del PNRR si esaurirà.</div>
+    <p class="src">Fonte: Svimez, Rapporto sull'economia e la società del Mezzogiorno (2019, 2020, 2023, 2024, 2025); Il Sole 24 Ore; Sky TG24; Innovation Post; CreditNews; UNSIC.</p>
   </div>
 </section>
 
@@ -1084,7 +1109,7 @@
 <footer>
   <div class="cols">
     <div><h3>Nota</h3><p>Sito informativo basato su dati pubblici ufficiali. Ogni indicatore è presentato con la propria fonte, verificabile indipendentemente. Il periodo 2018-2022 include tre governi diversi tra loro (Conte I, Conte II, Draghi).</p></div>
-    <div><h3>Periodi di riferimento</h3><p>2018-2022: giugno 2018 – ottobre 2022.<br>Governo Meloni: dal 22 ottobre 2022 al 25 agosto 2026.</p></div>
+    <div><h3>Periodi di riferimento</h3><p>2018-2022: giugno 2018 – ottobre 2022.<br>Governo Meloni: dal 22 ottobre 2022 al 31 agosto 2026.</p></div>
   </div>
 </footer>
 
@@ -1142,6 +1167,16 @@ function barChart(id, labels, data, color, suffix, meloniIndex){
 }
 
 lineChart('cPil', ['2018','2019','2020','2021','2022','2023','2024','2025','2026*'], [0.9,0.5,-8.9,8.9,4.7,1.0,0.7,0.5,0.8], accent, '%', 4);
+
+new Chart(document.getElementById('cPilSudNord'), {
+  type:'bar',
+  data:{ labels:['2018','2019','2020','2021','2022','2023','2024','2025','2026*'],
+    datasets:[
+      { label:'Sud', data:[0.6,-0.3,-9.0,7.3,3.5,1.3,0.95,0.7,0.8], backgroundColor:accent, borderRadius:2 },
+      { label:'Centro-Nord', data:[1.0,0.3,-9.8,7.4,3.8,0.85,0.65,0.5,0.7], backgroundColor:accent2, borderRadius:2 }
+    ]},
+  options:{ meloniIndex:5, plugins:{legend:{display:true, labels:{boxWidth:10}}}, scales:{ y:{grid, ticks:{callback:v=>v+'%'}}, x:{grid:{display:false}} } }
+});
 lineChart('cDebitoPil', ['2018','2019','2020','2021','2022','2023','2024','2025'], [134.4,134.3,154.1,150.4,141.7,134.6,134.9,137.1], accent2, '%', 4);
 lineChart('cDeficit', ['2018','2019','2020','2021','2022','2023','2024','2025'], [-2.2,-1.5,-9.4,-8.9,-8.1,-7.2,-3.4,-3.1], accent, '%', 4);
 
